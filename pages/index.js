@@ -1,9 +1,9 @@
-import Head from 'next/head';
-import { auth } from 'firebase';
-import { useAuth } from '../lib/auth';
+import Head from 'next/head'
+import { auth } from 'firebase'
+import { useAuth } from '../lib/auth'
 
 const Home = () => {
-  const auth = useAuth();
+  const auth = useAuth()
 
   return (
     <div className="container">
@@ -25,15 +25,7 @@ const Home = () => {
         )}
       </main>
 
-      <footer>
-        <a
-          href="https://vercel.com?utm_source=create-next-app&utm_medium=default-template&utm_campaign=create-next-app"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Powered by <img src="/vercel.svg" alt="Vercel Logo" />
-        </a>
-      </footer>
+      <footer>the footer</footer>
 
       <style jsx>{`
         .container {
@@ -177,8 +169,7 @@ const Home = () => {
         }
       `}</style>
     </div>
-  );
-};
+  )
+}
 
-export default Home;
- 
+export default Home
